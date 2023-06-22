@@ -19,7 +19,8 @@ use Illuminate\Support\Facades\Route;
 //     return $request->user();
 // });
 
-Route::post('/api/login', [LoginController::class,'login']);
+// connexion du user
+Route::post('login', [LoginController::class,'login']);
 
 
  
