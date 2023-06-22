@@ -14,15 +14,14 @@ class LoginController extends Controller
 
     public function login(Request $request)
     {
-        // //je m'assure que mes champs email et password son valide
-        // $request->validate([
-        //     'email' =>'required|string|email',
-        //     'password' =>'required|string',
-        // ]);
+        //je m'assure que mes champs email et password son valide
+        $request->validate([
+            'email' => 'required|string|email',
+            'password' => 'required|string',
+        ]);
     
         // ma variable  va récupérer que les infos de ces deux champs dans le formulaire
         $credentials = $request->only('email','password');
-        $credentials['password'] = Hash::make($credentials['password']);
       
         // La méthode attempt sera utiliser pour gérer les tentatives d'authentification à partir du formulaire de connexion
 
