@@ -14,11 +14,11 @@ class UserSeeder extends Seeder
      */
     public function run(): void
     {
-        // $user =  new User();
-        // $user->name = 'Nasryne';
-        // $user->email = "nasryne@gmail.com";
-        // $user->password = Hash::make("nasryne");
-        // $user->id_role = 1;
-        // $user->save();
+        $user =  new User();
+        $user->name = 'Nasryne';
+        $user->email = "nasryne@gmail.com";
+        $user->password = Hash::make("nasryne");
+        $user->id_role = 1;
+        $user->save();
     }
 }

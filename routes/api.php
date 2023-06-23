@@ -22,7 +22,9 @@ use Illuminate\Support\Facades\Route;
 // connexion du user
 Route::post('login', [LoginController::class,'login']);
 
-//Déconnexion
+//register
+Route::post('register', [LoginController::class,'register']);
 
+//Déconnexion
 Route::post('logout', [LoginController::class,'logout']);
  
